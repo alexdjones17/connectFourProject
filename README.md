@@ -1,10 +1,5 @@
 # Connect Four Machine Learning Project
 
-Alexander Jones  
-Governor's School for Science and Technology  
-2023-2024
+## Alexander Jones  with assistance from Jason Dudash
 
-Mr. Jason Dudash  
-Nvidia  
-
-This is a machine learning algorithm that learns how to play Connect Four.
+This is will (hopefully) be a machine learning algorithm that learns how to play Connect Four.
