@@ -1,10 +1,12 @@
 from pettingzoo.classic import connect_four_v3
+from ray.tune.registry import register_env
+import Connect4Env
 
 env_creator = lambda config: connect_four_v3.env(render_mode="rgb_array")
-
 register_env("connect4", lambda config: Connect4Env(env_creator(config)))
 
-from ray.rllib.agents import ppo
+#from ray.rllib.agents import ppo # this doesn't work anymore, ray moved the agents to a different location
+from ray.rllib.algorithms.ppo import PPO
 
 
 # import ray
